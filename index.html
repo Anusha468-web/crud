@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="bg-success-subtle">
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-6">
+                <div class="card p-5">
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="text" placeholder="Batch" id="batch">
+                    <input type="number" placeholder="Mobile" id="mobile">
+                    <input type="text" placeholder="Placed or Not" id="placed">
+                    <span id="ind"></span>
+                </div>
+                <div class="btn">
+                    <button class="btn btn-success" onclick="add()">Add data</button>
+                    <button class="btn btn-success" onclick="edit()">Edit</button>
+                </div>
+                <div class="card p-1">
+                    <table border="2px" id="info"></table>
+                    <span id="ind" style="display: none;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
