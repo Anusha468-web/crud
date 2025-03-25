@@ -14,6 +14,7 @@ function data1(){
                     <td>${obj.batch}</td>
                     <td>${obj.mobile}</td>
                     <td>${obj.placed}</td>
+                    
                     <td><button onclick="deletedata(${ind})">Delete</button>
                     <td><button onclick="editdata(${ind});">Edit</button>
                 </tr>`
@@ -38,15 +39,19 @@ function add(){
     let elebatch=document.getElementById("batch");
     let elenumber=document.getElementById("mobile");
     let eleplaced=document.getElementById("placed");
+    let eleope=document.getElementById("ope");
     let name=elename.value;
     let batch=elebatch.value;
     let mobile=elenumber.value;
     let placed=eleplaced.value;
+    let ope=eleope.value
     let obj={
         name:name,
         batch:batch,
         mobile:mobile,
         placed:placed
+        
+        
     }
     data.push(obj);
     data1();
